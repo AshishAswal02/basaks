@@ -13,7 +13,7 @@ const Banner = () => {
         <BannerImage src='/images/banner/d0.jpg' />
       </BannerPaper>
       <BannerContent>
-        <Typography variant="h6">With More Than five years of experience</Typography>
+        <Typography variant="h6">With more than five years of experience</Typography>
         <BannerTitle variant="h3">
           Band new Projects
         </BannerTitle>

@@ -11,9 +11,9 @@ const appbarDesktop = ({matches}) => {
         </AppbarHeader>
         <MyList type='row'>
             <ListItemText primary='Home' primaryTypographyProps={{}}/>
-            <ListItemText primary='Sites'/>
             <ListItemText primary='Projects'/>
-            <ListItemText primary='Contacts'/>
+            <ListItemText primary='Testimonials'/>
+            <ListItemText primary='Contact us'/>
         </MyList>
     </AppbarContainer>
   )

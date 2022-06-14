@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@mui/material";
+import { Box, ThemeProvider, Typography } from "@mui/material";
 import { Container } from "@mui/material";
 import { useEffect } from "react";
 import theme from "./styles/theme";
@@ -6,38 +6,34 @@ import "./App.css";
 import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Promotions from "./components/promotions";
+import Items from "./components/items";
+import Footer from "./components/footer";
 
 function App() {
-
-useEffect(() => {
-  document.title = "Anubhav Design Atelier"
-}, [])
-
+  useEffect(() => {
+    document.title = "Anubhav Design Atelier";
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <div className="background">
-        <div className="d1"></div>
-        <div className="d2"></div>
-        <div className="studio"> */}
-         <Container 
-         sx = {{ maxWidth: 'xl', background: 'inherit'}}
-         >
-           <Appbar /> 
-           <Banner /> 
-           <Promotions />
-           {/* 
+      <Container sx={{ maxWidth: "xl", background: "inherit" }}>
+        <Appbar />
+        <Banner />
+        <Promotions />
+        <Box display="flex" justifyContent={'center'} my={3}>
+          <Typography variant="h4">Our projects</Typography>
+        </Box>
+          <Items  />
+          <Footer />
+
+        {/* 
            title
-           producgts
-           footer
            drawer
            */}
-
-
-         </Container>
-        {/* </div>
+      </Container>
+      {/* </div>
       </div> */}
-      </ThemeProvider>
+    </ThemeProvider>
   );
 }
 
